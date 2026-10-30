@@ -394,8 +394,16 @@ body.opened .hero-name .letter { animation: letterIn .7s cubic-bezier(.2, 1.4, .
 /* ============ Gallery ============ */
 .polaroids {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 34px 26px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  .polaroids { grid-template-columns: repeat(2, 1fr); gap: 22px 14px; }
+  .polaroid:last-child { grid-column: 1 / -1; justify-self: center; width: calc(50% - 7px); }
+  .polaroid figcaption { font-size: 1.05rem; }
 }
 
 .polaroid {
@@ -529,10 +537,14 @@ body.opened .hero-name .letter { animation: letterIn .7s cubic-bezier(.2, 1.4, .
 /* ============ Reason cards ============ */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
-  max-width: 820px;
+  max-width: 680px;
   margin: 0 auto;
+}
+
+@media (max-width: 560px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
 }
 
 .card {
