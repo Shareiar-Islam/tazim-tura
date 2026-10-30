@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday, Tazim</title>
+  <meta name="description" content="A little corner of the internet made for Tazim Tura Taslima on her birthday.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💖</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@500;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="locked">
+
+  <!-- Background layers -->
+  <canvas id="sky" aria-hidden="true"></canvas>
+  <div id="hearts" aria-hidden="true"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <!-- Opening gate -->
+  <div id="gate" role="dialog" aria-label="Open your birthday surprise">
+    <div class="gate-inner">
+      <div class="gift" aria-hidden="true">
+        <div class="gift-lid"></div>
+        <div class="gift-box"></div>
+        <div class="gift-ribbon"></div>
+      </div>
+      <p class="gate-hello">Hey Tazim,</p>
+      <p class="gate-text">someone who loves you very much made you something.</p>
+      <button id="open-gift" class="btn">Open your gift 💝</button>
+    </div>
+  </div>
+
+  <button id="music-toggle" class="music-toggle" aria-label="Play birthday tune" title="Play birthday tune">♪</button>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="hero-photo">
+        <div class="ring"></div>
+        <img src="images/tazim-09.jpg" alt="Tazim smiling">
+      </div>
+      <p class="hero-kicker">Happy Birthday</p>
+      <h1 class="hero-name" id="hero-name">Tazim Tura Taslima</h1>
+      <p class="hero-type"><span id="typewriter"></span><span class="caret">|</span></p>
+      <a href="#distance" class="scroll-hint" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- Distance -->
+    <section id="distance" class="section distance">
+      <h2 class="title reveal">We've never met.<br><em>And yet&hellip;</em></h2>
+      <div class="stats">
+        <div class="stat reveal">
+          <span class="stat-num">0</span>
+          <span class="stat-label">times we've stood in the same room</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-num">&infin;</span>
+          <span class="stat-label">times you've made me smile through a screen</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-num">1</span>
+          <span class="stat-label">heart you've completely stolen</span>
+        </div>
+      </div>
+      <p class="lead reveal">
+        Love didn't wait for us to be in the same place. It found us anyway,
+        one message at a time.
+      </p>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section">
+      <h2 class="title reveal">The face that lights up my screen</h2>
+      <p class="subtitle reveal">Tap any photo to see it bigger</p>
+      <div class="polaroids">
+        <figure class="polaroid reveal"><img src="images/tazim-01.jpg" alt="Tazim in a pink kameez" loading="lazy"><figcaption>That look 💗</figcaption></figure>
+        <figure class="polaroid reveal"><img src="images/tazim-03.jpg" alt="Tazim in a mint green outfit" loading="lazy"><figcaption>Elegance in green</figcaption></figure>
+        <figure class="polaroid reveal"><img src="images/tazim-04.jpg" alt="Tazim in a red and black saree" loading="lazy"><figcaption>Red suits you</figcaption></figure>
+        <figure class="polaroid reveal"><img src="images/tazim-06.jpg" alt="Tazim on a swing among flowers" loading="lazy"><figcaption>A flower among flowers</figcaption></figure>
+        <figure class="polaroid reveal"><img src="images/tazim-08.jpg" alt="Tazim in a pink and orange saree" loading="lazy"><figcaption>Queen energy 👑</figcaption></figure>
+        <figure class="polaroid reveal"><img src="images/tazim-05.jpg" alt="Tazim in a maroon shawl" loading="lazy"><figcaption>Soft &amp; lovely</figcaption></figure>
+        <figure class="polaroid reveal"><img src="images/tazim-07.jpg" alt="Tazim sitting by a lake" loading="lazy"><figcaption>Prettiest view by the lake</figcaption></figure>
+        <figure class="polaroid reveal"><img src="images/tazim-02.jpg" alt="Tazim in a cream kameez" loading="lazy"><figcaption>My favourite notification</figcaption></figure>
+        <figure class="polaroid reveal"><img src="images/tazim-09.jpg" alt="Tazim smiling at a table" loading="lazy"><figcaption>The smile I can't wait to see in person</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section id="story" class="section">
+      <h2 class="title reveal">Our story, so far</h2>
+      <ol class="timeline">
+        <li class="reveal">
+          <span class="dot">💬</span>
+          <h3>The first hello</h3>
+          <p>It started with a few words on a screen. I had no idea those words would end up changing everything.</p>
+        </li>
+        <li class="reveal">
+          <span class="dot">🌙</span>
+          <h3>The late nights</h3>
+          <p>Talking until our eyes were heavy, neither of us wanting to be the first one to say goodnight.</p>
+        </li>
+        <li class="reveal">
+          <span class="dot">💞</span>
+          <h3>Falling, quietly</h3>
+          <p>Somewhere between your messages and your laughter, I fell for you, without ever seeing you in person.</p>
+        </li>
+        <li class="reveal">
+          <span class="dot">🎂</span>
+          <h3>Today</h3>
+          <p>Your birthday. I can't be there with flowers, so I built you this little corner of the internet instead.</p>
+        </li>
+        <li class="reveal">
+          <span class="dot">🤍</span>
+          <h3>Someday</h3>
+          <p>The day I finally see you in front of me. I already know it's going to feel like coming home.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Reasons -->
+    <section id="reasons" class="section">
+      <h2 class="title reveal">A few reasons I love you</h2>
+      <p class="subtitle reveal">Tap a card to flip it</p>
+      <div class="cards">
+        <button class="card reveal"><span class="card-front">✨</span><span class="card-back">Your kindness, even on days you're tired</span></button>
+        <button class="card reveal"><span class="card-front">🌸</span><span class="card-back">The way you make distance feel small</span></button>
+        <button class="card reveal"><span class="card-front">🌙</span><span class="card-back">Every "good night" you've ever sent me</span></button>
+        <button class="card reveal"><span class="card-front">🎧</span><span class="card-back">You listen, really listen</span></button>
+        <button class="card reveal"><span class="card-front">😊</span><span class="card-back">Your smile, even through a blurry screen</span></button>
+        <button class="card reveal"><span class="card-front">💖</span><span class="card-back">Simply because you're you</span></button>
+      </div>
+    </section>
+
+    <!-- Letter -->
+    <section id="letter" class="section">
+      <h2 class="title reveal">A letter for you</h2>
+      <p class="subtitle reveal">Tap the envelope</p>
+      <div class="envelope reveal" id="envelope" role="button" tabindex="0" aria-label="Open the letter">
+        <div class="env-back"></div>
+        <div class="paper">
+          <p class="paper-greet">My dearest Tazim,</p>
+          <p>Happy birthday, my love.</p>
+          <p>It's a strange and beautiful thing, loving someone I've never met in person. Not everyone would understand it, but I do. I've never held your hand, yet you've become the most familiar part of my day.</p>
+          <p>Every message from you feels like a small sunrise. On hard days you've been my calm, and on good days you've been the first person I wanted to tell.</p>
+          <p>I'm sorry I can't be there today to hug you, sing for you (badly), and watch you blow out your candles. But I promise you this: every birthday we spend apart brings us one step closer to the ones we'll spend together.</p>
+          <p>Until then, I'll keep loving you across every mile and every screen between us.</p>
+          <p>Thank you for being born, and thank you for choosing me.</p>
+          <p class="paper-sign">Forever yours,<br>Shareiar</p>
+        </div>
+        <div class="env-front"></div>
+        <div class="env-flap"></div>
+        <div class="env-seal">💌</div>
+      </div>
+    </section>
+
+    <!-- Cake -->
+    <section id="cake" class="section">
+      <h2 class="title reveal">Make a wish, Tazim</h2>
+      <p class="subtitle reveal" id="cake-hint">Tap the candles to blow them out</p>
+      <div class="cake reveal" id="cake-el" role="button" tabindex="0" aria-label="Blow out the candles">
+        <div class="candles">
+          <div class="candle"><div class="flame"></div></div>
+          <div class="candle"><div class="flame"></div></div>
+          <div class="candle"><div class="flame"></div></div>
+        </div>
+        <div class="tier tier-top"></div>
+        <div class="tier tier-bottom"></div>
+        <div class="plate"></div>
+      </div>
+      <p class="wish-msg" id="wish-msg">I hope every wish you just made comes true.<br>And I hope I'm in at least one of them 🤍</p>
+    </section>
+
+    <!-- Finale -->
+    <section id="finale" class="section finale">
+      <p class="finale-script reveal">Happy Birthday, my love</p>
+      <p class="lead reveal">
+        Until the day I can say it to your face, hold your hand and
+        finally see that smile in real life, let this page say it for me:
+      </p>
+      <p class="finale-big reveal">I love you, Tazim. 💖</p>
+      <button class="btn reveal" id="replay">Celebrate again 🎉</button>
+    </section>
+
+  </main>
+
+  <footer class="footer">Made with love, across the distance, for Tazim Tura Taslima &middot; 31 October</footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lb-btn lb-close" aria-label="Close">&times;</button>
+    <button class="lb-btn lb-prev" aria-label="Previous photo">&#8249;</button>
+    <figure>
+      <img id="lb-img" alt="">
+      <figcaption id="lb-cap"></figcaption>
+    </figure>
+    <button class="lb-btn lb-next" aria-label="Next photo">&#8250;</button>
+  </div>
+
+  <script src="js/sky.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/celebrate.js"></script>
+</body>
+</html>
